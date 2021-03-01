@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap.min.css">
+  <title>Ads</title>
+</head>
+<body>
+    <header>
+        <nav class="navb"></nav>
+        <script src='../navbar/nav.js'></script>
+    </header>
+      <main>
+          <!-- <div class="d-flex ml-5 mt-5">
+            <div class="p-2">Name:</div>
+            <div class="adname p-2"></div>
+            <div class="interest p-2"></div>
+          </div>
+          <div class="d-flex ml-5 mt-5">
+            <div class="p-2">Summary</div>
+            <div class="summary p-2">
+            </div>
+          </div> -->
+
+          <h2 class="d-flex justify-content-center mt-4">Create an AD</h2>
+
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <form>
+                  <div class="form-group">
+                    <label for="adname">Enter ad name</label>
+                    <input type="text" class="form-control mt-2" id="adname" placeholder="Enter Ad name">  
+                    <label for="description" class="mt-4">Enter Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="5"></textarea>
+                    <!-- <label for="image" class="mt-5">Upload file</label>
+                    <input type="file" name="image" id="image" class="form-control-file mt-2"> -->
+                    <div class="custom-file mt-4">
+                      <label for="image" class="custom-file-label">Choose file</label>
+                      <input type="file" id="image" class="custom-file-input">
+                    </div>
+                  </div>
+                  <button type="submit" class="mx-auto d-block btn btn-primary mt-5">Create AD</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+      </main>
+</body>
+</html>
