@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const uname = document.querySelector('#username');
 const pword = document.querySelector('#password');
 
-form.addEventListener('submit',login)
+form[1].addEventListener('submit',login)
 const url = '';
 function login(event)
 {
