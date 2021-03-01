@@ -20,7 +20,7 @@ public class LoginController {
         return "User added successfully!";
     }
 
-    @PostMapping("/login")
+   /* @PostMapping("/login")
     public String validateLogin(@RequestParam String username, @RequestParam String password) {
         List<Person> personList = personRepository.findAll();
         for (Person p: personList) {
@@ -31,6 +31,13 @@ public class LoginController {
             }
         }
         return "User not found";
+    }*/
+
+    @PostMapping("/login")
+    public void validateLogin(@ModelAttribute Person person) {
+        System.out.println("Inside the function");
+        System.out.println(person.getUsername());
+        System.out.println(person.toString());
     }
 
 }
